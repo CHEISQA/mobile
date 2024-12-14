@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MarhbaBik</string>
+    <string name="intro">Welcome To Your Assistant To Choose Your Option and Build Your Future </string>
+
+
+    <string name="title_guide">Titre du Guide</string>
+    <string name="confirm_button_text">Confirmer</string>
+
+    <!-- Titles for blocks -->
+    <string name="block_title_1">Connexion et Création de Compte</string>
+    <string name="block_title_2">Choix et Modification de Filière</string>
+    <string name="block_title_3">Mise à Jour du Profil</string>
+    <string name="block_title_4">Support et Confidentialité</string>
+
+    <!-- Paragraph texts for blocks -->
+    <string name="block_text_1">Assurez-vous davoir correctement saisi vos informations lors de la connexion ou la création de compte. Votre nom dutilisateur et mot de passe sont essentiels pour accéder à votre profil étudiant.</string>
+    <string name="block_text_2">Lorsque vous sélectionnez une filière, vérifiez bien que vos choix sont conformes à vos préférences et à votre profil académique. Vous pouvez modifier votre choix de filière avant la date limite. Une fois validé, vous ne pourrez plus revenir en arrière.</string>
+    <string name="block_text_3">Maintenez vos informations personnelles à jour dans la section "éditer profil" pour garantir une bonne communication.</string>
+    <string name="block_text_4">En cas de problème ou de question, contactez le support via la page Support de lapplication. Vous y trouverez les coordonnées du responsable de votre filière et dautres contacts utiles.</string>
+
+
+    <string name="title_option_list">List Of Options</string>
+    <string name="optionData">Data Science et Cloud</string>
+    <string name="optionDev">Genie logiciel et Developpement mobile</string>
+    <string name="choix_title">Field of Study Selection</string>
+
+    Field of Study Selection
+
+    <!-- texts for saisir notes -->
+    <string name="module1">Module1</string>
+    <string name="module2">Module2</string>
+    <string name="module3">Module3</string>
+    <string name="module4">Module4</string>
+    <string name="module5">Module5</string>
+    <string name="module6">Module6</string>
+    <string name="hint_note">0.0</string>
+</resources>

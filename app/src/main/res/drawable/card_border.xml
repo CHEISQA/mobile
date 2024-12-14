@@ -1,0 +1,13 @@
+<!-- res/drawable/card_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Couche pour la bordure -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Couleur de fond -->
+            <stroke
+                android:width="9dp"
+                android:color="#000000" /> <!-- Couleur et épaisseur de la bordure -->
+            <corners android:radius="8dp" /> <!-- Arrondir les coins -->
+        </shape>
+    </item>
+</layer-list>

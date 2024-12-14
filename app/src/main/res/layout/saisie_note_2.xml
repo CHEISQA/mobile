@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NotesActivity2">
+
+    <!-- Header -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/blue_fonce">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/wavehaikei1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_school_24" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/transactionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Saisir les notes des modules"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Warning Message -->
+    <LinearLayout
+        android:id="@+id/linearLayoutWarning"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_red_light"
+        android:padding="16dp"
+        android:layout_below="@id/transactionTextView"
+        android:layout_marginTop="54dp"
+        android:gravity="center_vertical">
+
+        <!-- Warning Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_warning"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Warning Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attention : Si vous mentez lors de la saisie des notes, vous serez sanctionné."
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Message discret -->
+    <TextView
+        android:id="@+id/semesterMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutWarning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Veuillez spécifier les notes uniquement pour le semestre 6 (S6)."
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+    <!-- Scrollable Form -->
+    <ScrollView
+        android:id="@+id/scrollForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/semesterMessage"
+        android:layout_marginTop="1dp"
+        android:layout_above="@id/bottom_navigation"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Table -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:shrinkColumns="1">
+
+                <!-- Header Row -->
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Module"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Note"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Rows for 6 Modules -->
+                <TableRow>
+                    <TextView android:text="@string/module1" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="@string/module2" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="@string/module3" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="@string/module4" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="@string/module5" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="@string/module6" />
+                    <EditText android:hint="@string/hint_note" android:inputType="numberDecimal" />
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- Validation Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_valider"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Suivant"
+                    android:backgroundTint="@color/blue_fonce" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav_background"
+        app:itemIconTint="@color/light_gray"
+        app:itemTextColor="@color/light_gray"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

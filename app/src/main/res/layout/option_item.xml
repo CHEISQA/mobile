@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:background="@drawable/item_border"
+    android:clipToOutline="true">
+
+    <!-- Image Section -->
+    <ImageView
+        android:id="@+id/img_option"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/data_science"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+         />
+
+    <!-- Text Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <!-- Option Title -->
+        <TextView
+            android:id="@+id/tv_option_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <!-- Subtitle Section (Role and Name) -->
+        <TextView
+            android:id="@+id/tv_option_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chef de filiere\nnom prenom"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <!-- Detail Button -->
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/blue_fonce"
+        android:padding="8dp"
+        android:minWidth="80dp"
+        android:layout_marginTop="66dp"/>
+
+</LinearLayout>

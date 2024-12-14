@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/colors.xml -->
+    <color name="light_blue">#BBDEFB</color>
+    <color name="dark_blue">#325ADF</color>
+    <color name="button_blue">#3F51B5</color>
+    <color name="button_blue_dark">#5C6BC0</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_dark">#325ADF</color>
+    <color name="blue">#0D325ADF</color>
+    <color name="blue_fonce">#0e0d5a</color>
+    <color name="light_gray">#D6D1D5</color>
+    <color name="my_primary">#325ADF</color>
+
+</resources>
